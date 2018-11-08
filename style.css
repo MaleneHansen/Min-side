@@ -1,0 +1,39 @@
+/* Grid wrapper */
+
+.wrapper {
+    display: grid;
+    width: 85%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+/* infinite rows / 6 columns */
+}
+
+
+#en {
+    grid-area: 1 / 2 / 1 / 2; 
+}
+
+#to {
+    grid-area: 1 / 3 / 1 / 3;
+}
+
+#tre {
+    grid-area: 1 / 4 / 1 / 4;
+}
+
+#fire {
+    grid-area: 2 / 5 / 2 /5;
+}
+
+#fem {
+    grid-area: 2 / 6 / 2 / 6;
+}
+
+/* Det første "1" tal bestemmer hvad række det skal starte */
+/* Det første "2" tal bestemmer hvad kolonne det skal starte */
+
+/* Det andet "1" tal bestemmer hvad række det skal slutte */
+/* Det andet "2" tal bestemmer hvad kolonne det skal slutte */
