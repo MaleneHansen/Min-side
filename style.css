@@ -1,39 +1,57 @@
-/* Grid wrapper */
+.grid {
+    display:grid;
+    
+    grid-template-rows:100px auto 100px;
+    grid-template-columns:repeat(9, 100px);
+    
+    grid-template-areas:
+    "header header header header header header header header header"
+    "content content content content content content content sidebar sidebar"
+    "footer footer footer footer footer footer footer footer footer";
+  }
 
-.wrapper {
-    display: grid;
-    width: 85%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-/* infinite rows / 6 columns */
-}
+.header {
+    grid-row-start:1;
+    grid-row-end:2;
+    grid-column-start:1;
+    grid-column-end:10;
+  }
+  
 
+  .content {
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:1;
+    grid-column-end:8;
+  }
+  
 
-#en {
-    grid-area: 1 / 2 / 1 / 2; 
-}
+  .sidebar {
+    grid-row-start:2;
+    grid-row-end:3;
+    grid-column-start:8;
+    grid-column-end:10;
+  }
+  
 
-#to {
-    grid-area: 1 / 3 / 1 / 3;
-}
+  .footer {
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:10;
+  }
+  
 
-#tre {
-    grid-area: 1 / 4 / 1 / 4;
-}
-
-#fire {
-    grid-area: 2 / 5 / 2 /5;
-}
-
-#fem {
-    grid-area: 2 / 6 / 2 / 6;
-}
-
-/* Det første "1" tal bestemmer hvad række det skal starte */
-/* Det første "2" tal bestemmer hvad kolonne det skal starte */
-
-/* Det andet "1" tal bestemmer hvad række det skal slutte */
-/* Det andet "2" tal bestemmer hvad kolonne det skal slutte */
+  .content {
+    grid-row-start:3;
+    grid-row-end:4;
+    grid-column-start:1;
+    grid-column-end:7;
+  }
+  
+  ul {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    color: #666666;
+    background-color: #f8f8f8;
+  }
