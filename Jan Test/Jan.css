@@ -9,6 +9,11 @@ img {
     justify-self: center;
     max-width: 100%;
     width: 30%;
+    transition: all 1s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.5) translate(0, 20%);
 }
 
 h1 {
